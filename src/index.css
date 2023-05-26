@@ -1,0 +1,32 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.my-container{
+    @apply lg:w-[1000px] mx-auto
+}
+.my-btn{
+    @apply inline-block py-2 px-4 bg-[#ef1d26] hover:bg-slate-800 rounded-md
+}
+.active{
+    @apply bg-[#ef1d26] py-2 px-4 text-white rounded-lg font-medium;
+}
+.default{
+    @apply py-2 px-4 text-[#848A87] font-medium;
+}
+form input{
+    @apply block border
+}
+/* card */
+.card:hover .hover-detail{
+    @apply block
+}
+.hover-detail{
+    @apply absolute top-0 left-0 py-4 h-full w-full hidden
+}
+.category-image:hover img{
+    @apply hover:rotate-45 hover:transition-all hover:duration-500 transform rotate-0 transition-all duration-1000
+}
+.category-image{
+    @apply w-[200px] h-[200px] rounded-full overflow-hidden border;
+}
